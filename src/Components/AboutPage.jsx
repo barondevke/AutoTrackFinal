@@ -30,7 +30,7 @@ const AboutPage = () => {
             helps you find the perfect car that suits your needs and preferences.
           </p>
         <Link to="/buy-sell">
-          <button>Read More</button>
+          <button className='btnm'>Read More</button>
         </Link>
       </div>
     </div>

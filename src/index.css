@@ -2,6 +2,7 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  font-size: 20px;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -37,16 +38,24 @@ code {
 }
 
 .car-image-container {
-  flex: 1; 
+  flex: 0.5; 
 }
 
 .car-image {
   width: 100%;
-  max-width: 500px;
+  max-width: 450px;
   height: auto;
+  border-radius: 2rem;
 }
 
 .about-us-content {
   flex: 1; 
   padding: 20px;
+}
+.btnm{
+  border-radius: 3rem;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: aliceblue;
 }
