@@ -1,7 +1,13 @@
 import React from "react";
 
-export default function CarPage () {
+export default function CarPage() {
+
     return (
-        <h1>Make car page here</h1>
+        <div>
+            <img></img>
+            <h1>Make car page here</h1>
+
+
+        </div>
     )
 }
