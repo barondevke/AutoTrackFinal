@@ -57,7 +57,7 @@ function App() {
       return {
         ...item,
         url: carArray[index],
-        price: generateRandomNumber(1000,800)*1000,
+        price: generateRandomNumber(1000,8000)*1000,
         rating: generateRandomNumber(2,5),
         kmsDriven: generateRandomNumber(5,350)*100,
         fuelConsumption: generateRandomNumber(20,60) + `L/100kms`,
@@ -80,9 +80,9 @@ function App() {
     <NavBar/>
       <Routes>
         <Route path ="/" exact="true" element={<HomePage/>}/>
-        <Route path ="/buy" exact="true" element={<BuyPage/>}/>
+        <Route path ="/buy" exact="true" element={<BuyPage cars={finalArray}/>}/>
         <Route path ="/sell" exact="true" element={<SellPage/>}/>
-        <Route path ="/buy/:id" exact="true" element={<CarPage/>}/>
+        <Route path ="/buy/:index" exact="true" element={<CarPage cars={finalArray}/>}/>
       </Routes>
     <Footer/>
     </>

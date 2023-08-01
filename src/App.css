@@ -111,3 +111,36 @@ nav ul li a.active {
     left: 37px;
     font-size: 20px;
 }
+
+#carsHolder {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .carContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #D6EAF8;
+    border: 1px solid #ddd;
+  }
+  
+  .carContainer img {
+    width: 100%; /* Control the size of the image */
+    max-height: 200px; /* Set the maximum height of the image */
+    object-fit: cover; /* Ensure the image maintains its aspect ratio */
+    margin: 0; /* Remove margin around the images */
+    padding: 0; /* Remove padding around the images */
+  }
+  
+  .botCardInternal {
+    margin-top: 10px;
+  }
+  
+  h2,
+  h3 {
+    margin: 0;
+  }
+  
