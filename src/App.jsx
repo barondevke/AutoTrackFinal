@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Link } from 'react-router-dom'
 import axios from 'axios'
 import './App.css'
 import NavBar from './Components/NavBar'
@@ -8,6 +8,7 @@ import HomePage from './Components/HomePage'
 import SellPage from './Components/SellPage'
 import CarPage from './Components/CarPage'
 import BuyPage from './Components/BuyPage'
+import AboutPage from "./Components/AboutPage"
 
 
 function App() {
@@ -39,12 +40,19 @@ function App() {
   return (
     <>
     <NavBar/>
+    <AboutPage />
       <Routes>
         <Route exact path ="/" element={<HomePage/>}/>
         <Route exact path ="/buy" element={<BuyPage/>}/>
+        
         <Route exact path ="/sell" element={<SellPage/>}/>
+        <Route exact path="/about-us" element={<AboutPage />} /> 
+        
+       
       </Routes>
+      
     <Footer/>
+   
     </>
   )
 }

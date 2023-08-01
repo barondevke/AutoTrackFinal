@@ -27,3 +27,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* AboutUs.css (create this file in the same folder as AboutUs.js) */
+
+.about-us-container {
+  display: flex;
+  align-items: center; 
+  justify-content: space-around; 
+  margin: 20px;
+}
+
+.car-image-container {
+  flex: 1; 
+}
+
+.car-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.about-us-content {
+  flex: 1; 
+  padding: 20px;
+}
