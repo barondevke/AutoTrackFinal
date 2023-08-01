@@ -39,6 +39,7 @@ function App() {
   return (
     <>
     <NavBar/>
+    <SellPage />
       <Routes>
         <Route exact path ="/" element={<HomePage/>}/>
         <Route exact path ="/buy" element={<BuyPage/>}/>
@@ -50,3 +51,8 @@ function App() {
 }
 
 export default App
+
+
+
+
+
