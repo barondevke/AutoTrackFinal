@@ -1,46 +1,72 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-class SellPage extends React.Component {
-  render() {
-    const {
-      make,
-      model,
-      year,
-      price,
-      location,
-      kmsDriven,
-      transmission,
-      power,
-      fuel,
-      driveType,
-      addToCarFinder
-    } = this.props;
+function Sellpage() {
+    const [carInfo, setCarInfo] = useState({
+        make: '',
+        model: '',
+        year: '',
+        price: '',
+        location: '',
+        kms: '',
+        transmission: '',
+        power: '',
+        fuel: '',
+        driveType: ''
+    });
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // Here you can add logic to handle the form submission
+        // For example, sending the data to a backend server or storing it in state/database
+        console.log(carInfo);
+    };
+     
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setCarInfo((prevInfo) => ({
+            ...prevInfo,
+            [name]: value
+        }));
+    };
 
     return (
-      <div>
-        <h1>Sell Your Car</h1>
         <div>
-          <h2>Car Information:</h2>
-          <p>
-            Make: {make}<br />
-            Model: {model}<br />
-            Year: {year}<br />
-            Price: ${price}<br />
-            Location: {location}<br />
-            Kilometers Driven: {kmsDriven}<br />
-            Transmission: {transmission}<br />
-            Power: {power} hp<br />
-            Fuel: {fuel}<br />
-            Drive Type: {driveType}
-          </p>
+            <h1>SELL YOUR CAR TODAY!!</h1>
+            <form onSubmit={handleSubmit}>
+                <label htmlFor="make">Make:</label>
+                <input type="text" id="make" name="make" value={carInfo.make} onChange={handleInputChange} required /><br /><br />
+
+                <label htmlFor="model">Model:</label>
+                <input type="text" id="model" name="model" value={carInfo.model} onChange={handleInputChange} required /><br /><br />
+
+                <label htmlFor="year">Year:</label>
+                <input type="text" id="year" name="year" value={carInfo.year} onChange={handleInputChange} required /><br /><br />
+
+                <label htmlFor="price">Price:</label>
+                <input type="text" id="price" name="price" value={carInfo.price} onChange={handleInputChange} required /><br /><br />
+
+                <label htmlFor="location">Location:</label>
+                <input type="text" id="location" name="location" value={carInfo.location} onChange={handleInputChange} required /><br /><br />
+
+                <label htmlFor="kms">Kilometers:</label>
+                <input type="text" id="kms" name="kms" value={carInfo.kms} onChange={handleInputChange} required /><br /><br />
+
+                <label htmlFor="transmission">Transmission:</label>
+                <input type="text" id="transmission" name="transmission" value={carInfo.transmission} onChange={handleInputChange} required /><br /><br />
+
+                <label htmlFor="power">Power:</label>
+                <input type="text" id="power" name="power" value={carInfo.power} onChange={handleInputChange} required /><br /><br />
+
+                <label htmlFor="fuel">Fuel:</label>
+                <input type="text" id="fuel" name="fuel" value={carInfo.fuel} onChange={handleInputChange} required /><br /><br />
+
+                <label htmlFor="driveType">Drive Type:</label>
+                <input type="text" id="driveType" name="driveType" value={carInfo.driveType} onChange={handleInputChange} required /><br /><br />
+                
+                <input type="submit" value="ADD TO CARFINDER" />
+            </form>
         </div>
-        <div>
-          <button onClick={addToCarFinder}>Add to Car Finder</button>
-        </div>
-        {/* Other sell page components */}
-      </div>
     );
-  }
 }
 
-export default SellPage;
+export default Sellpage;
