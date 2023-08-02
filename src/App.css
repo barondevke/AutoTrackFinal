@@ -133,6 +133,11 @@ nav ul li a.active {
     padding-left: 40%;
 }
 
+.carPriceValueSN {
+    color: rgb(46, 204, 113);
+    ;
+}
+
 #carsHolderJk {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
