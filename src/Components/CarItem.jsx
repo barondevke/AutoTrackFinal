@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function CarItem ({car , index}) {
+export default function CarItem ({car, index}) {
 
     const navigate = useNavigate();
 
@@ -21,9 +21,9 @@ export default function CarItem ({car , index}) {
       }
 
     return (
-        <div id={car.id} key={car.id} className="carContainer" onClick={() => navigate(`/buy/${index}`)}>
+        <div id={car.id} key={car.id} className="carContainerJk" onClick={() => navigate(`/buy/${index}`)}>
             <img src={car.url} alt={car.model}/>
-            <div className="botCardInternal">
+            <div className="botCardInternalJk">
                 <h2 style={{ color: `#2ECC71` }}>Ksh {car.price}</h2>
                 <h2>{car.year} {car.make} {car.model}</h2>
                 <h3><i class="fa-solid fa-location-dot"></i>  {car.location}</h3>
