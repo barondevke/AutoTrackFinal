@@ -8,11 +8,18 @@ import HomePage from './Components/HomePage'
 import SellPage from './Components/SellPage'
 import CarPage from './Components/CarPage'
 import BuyPage from './Components/BuyPage'
+import Login from './Login'
+import Register from './Register'
 
 
 function App() {
 
   const [data, setData] = useState([])
+  const[currentForm,setCurrentForm]=useState("login")
+
+  const changeForm=(name)=>{
+   setCurrentForm(name);
+  }
 
 
   async function getCar() {
@@ -44,7 +51,8 @@ function App() {
         <Route exact path ="/buy" element={<BuyPage/>}/>
         <Route exact path ="/sell" element={<SellPage/>}/>
       </Routes>
-    <Footer/>
+    
+    {currentForm === "login" ? <Login changeForm={changeForm}/>:<Register  changeForm={changeForm}/>} 
     </>
   )
 }
