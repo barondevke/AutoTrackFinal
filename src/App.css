@@ -132,3 +132,41 @@ nav ul li a.active {
 .carPrice {
     padding-left: 40%;
 }
+
+#carsHolderJk {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.carContainerJk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #D6EAF8;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.carContainerJk img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    /* Ensure the image maintains its aspect ratio */
+    margin: 0;
+    padding: 0;
+}
+
+.carContainerJk:hover {
+    background-color: #5D6D7E;
+}
+
+.botCardInternalJk {
+    margin-top: 10px;
+}
+
+.botCardInternalJk h2,
+.botCardInternalJk h3 {
+    margin: 0;
+}
