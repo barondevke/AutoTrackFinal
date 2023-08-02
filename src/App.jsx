@@ -38,13 +38,14 @@ function App() {
 
   return (
     <>
-    <NavBar/>
+      <NavBar />
       <Routes>
-        <Route exact path ="/" element={<HomePage/>}/>
-        <Route exact path ="/buy" element={<BuyPage/>}/>
-        <Route exact path ="/sell" element={<SellPage/>}/>
+        <Route exact path="/" element={<HomePage />} />
+        <Route exact path="/buy" element={<BuyPage />} />
+        <Route exact path="/sell" element={<SellPage />} />
+        <Route exact path='/car' element={<CarPage />} />
       </Routes>
-    <Footer/>
+      <Footer />
     </>
   )
 }

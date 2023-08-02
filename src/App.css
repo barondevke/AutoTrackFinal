@@ -111,3 +111,24 @@ nav ul li a.active {
     left: 37px;
     font-size: 20px;
 }
+
+.carImage {
+    height: 50vh;
+    width: 100vw;
+}
+
+.stats {
+    margin-top: 2%;
+}
+
+.carInfo {
+    margin-top: 2%;
+}
+
+.rightStats {
+    padding-right: 60%;
+}
+
+.carPrice {
+    padding-left: 40%;
+}
