@@ -9,6 +9,7 @@ import HomePage from './Components/HomePage'
 import SellPage from './Components/SellPage'
 import CarPage from './Components/CarPage'
 import BuyPage from './Components/BuyPage'
+import AboutPage from './Components/AboutPage'
 
 
 function App() {
@@ -82,6 +83,7 @@ function App() {
         <Route path ="/" exact="true" element={<HomePage/>}/>
         <Route path ="/buy" exact="true" element={<BuyPage cars={finalArray}/>}/>
         <Route path ="/sell" exact="true" element={<SellPage/>}/>
+        <Route path ="/about" exact="true" element={<AboutPage/>}/>
         <Route path ="/buy/:index" exact="true" element={<CarPage cars={finalArray}/>}/>
       </Routes>
     <Footer/>

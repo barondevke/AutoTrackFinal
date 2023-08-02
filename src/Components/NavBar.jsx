@@ -17,8 +17,10 @@ export default function NavBar () {
             <span className="logo-text">Auto Track</span>
          </div>
             <ul>
+                <li><NavLink exact to = "/">Home</NavLink></li>
                 <li><NavLink exact to = "/buy">Buy</NavLink></li>
                 <li><NavLink exact to = "/sell">Sell</NavLink></li>
+                <li><NavLink exact to = "/about">About</NavLink></li>
                 <li><Link to= "#"  onClick={handleScrollToFooter}>Contact us</Link></li>
             </ul>
         </nav>
