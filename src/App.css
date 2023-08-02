@@ -119,10 +119,12 @@ nav ul li a.active {
 
 .stats {
     margin-top: 2%;
+    color: #6F61C0;
 }
 
 .carInfo {
     margin-top: 2%;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .rightStats {
@@ -136,6 +138,18 @@ nav ul li a.active {
 .carPriceValueSN {
     color: rgb(46, 204, 113);
     ;
+}
+
+.allDetails {
+    padding: auto;
+}
+
+.buyBtn {
+    font-size: 2rem;
+    background-color: #5DADE2;
+    color: yellow;
+    margin-top: 1.2%;
+    margin-bottom: 1.7%;
 }
 
 #carsHolderJk {

@@ -1,6 +1,8 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import { useParams } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faRoad, faGear, faGasPump, faGauge } from "@fortawesome/free-solid-svg-icons";
 
 
 export default function CarPage({ cars }) {
@@ -22,12 +24,12 @@ export default function CarPage({ cars }) {
 
 
     return (
-        <div>
+        <div className="allDetails">
             <img className="carImage" src={car.url}></img>
             <Row className="carInfo">
                 <Col  >
-                    <h3 className="carName">{car.year} {car.model} -{car.make} </h3>
-                    <h4 className="carLocation">Location: {car.location}</h4>
+                    <h1 className="carName">{car.year} {car.model} -{car.make} </h1>
+                    <h2 className="carLocation">Location: {car.location}</h2>
                 </Col>
                 <Col className="carPrice"  >
                     <h1 className="carPriceValueSN">Ksh {car.price}</h1>
@@ -38,10 +40,10 @@ export default function CarPage({ cars }) {
                 <Col className="stats">
                     <Row>
                         <Col>
-                            <h4>Kms Driven</h4>
-                            <h4>Transmission</h4>
-                            <h4>Fuel</h4>
-                            <h4>Consumption</h4>
+                            <h4><FontAwesomeIcon icon={faRoad} style={{ color: "#6f61c0", }} /> Kms Driven</h4>
+                            <h4><FontAwesomeIcon icon={faGear} style={{ color: "#6f61c0", }} /> Transmission</h4>
+                            <h4><FontAwesomeIcon icon={faGasPump} style={{ color: "#6f61c0", }} /> Fuel</h4>
+                            <h4><FontAwesomeIcon icon={faGauge} style={{ color: "#6f61c0", }} /> Consumption</h4>
 
                         </Col>
                         <Col className="rightStats">
@@ -59,7 +61,7 @@ export default function CarPage({ cars }) {
             </Row>
             <Row>
                 <Col>
-                    <button>Buy Now</button>
+                    <button className="buyBtn">Buy Now</button>
                 </Col>
             </Row>
 
