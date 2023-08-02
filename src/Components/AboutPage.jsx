@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import carImage from './images/image.avif';
+import carImage from '/home/moringa/Documents/The-About/AutoTrackFinal/src/images/buga.avif'
 
 
 const AboutPage = () => {
@@ -10,6 +10,7 @@ const AboutPage = () => {
         <img src= {carImage} alt="Car" className="car-image" />
       </div>
       <div className="about-us-content">
+       
         <h2>About Us</h2>
         <p>
         Welcome to AutoTrack, your ultimate 
@@ -29,8 +30,22 @@ const AboutPage = () => {
             Whether you are a car enthusiast or a casual buyer, we hope our website
             helps you find the perfect car that suits your needs and preferences.
           </p>
-        <Link to="/buy-sell">
-          <button className='btnm'>Read More</button>
+          <h3>Our Mission</h3>
+          <p>
+          "AutoTrack is dedicated to revolutionizing the car buying and
+           selling experience by providing a seamless and transparent 
+           platform for automotive enthusiasts. Our mission is to empower 
+           customers with the information, tools, and resources they need 
+           to make informed decisions when buying or selling a car. We strive 
+           to offer a diverse and high-quality inventory, exceptional customer service, 
+           and innovative solutions to create a positive and satisfying experience for 
+           every customer. At AutoTrack, we aim to be the go-to destination for anyone
+            seeking their dream car or looking to sell their vehicle quickly and hassle-free."
+
+          </p>
+        <Link to="/guide">
+
+          <button className='btnm'>Learn More</button>
         </Link>
       </div>
     </div>

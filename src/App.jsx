@@ -11,6 +11,8 @@ import BuyPage from './Components/BuyPage'
 import AboutPage from "./Components/AboutPage"
 
 
+
+
 function App() {
 
   const [data, setData] = useState([])
@@ -41,14 +43,11 @@ function App() {
     <>
     <NavBar/>
     <AboutPage />
+    
       <Routes>
         <Route exact path ="/" element={<HomePage/>}/>
-        <Route exact path ="/buy" element={<BuyPage/>}/>
-        
+        <Route exact path ="/buy" element={<BuyPage/>}/>        
         <Route exact path ="/sell" element={<SellPage/>}/>
-        <Route exact path="/about-us" element={<AboutPage />} /> 
-        
-       
       </Routes>
       
     <Footer/>
