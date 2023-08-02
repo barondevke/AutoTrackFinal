@@ -12,11 +12,11 @@ export default function CarPage({ cars }) {
             <img className="carImage" src={car.url}></img>
             <Row className="carInfo">
                 <Col  >
-                    <h3 className="carName">{car.year} {car.model} {car.make} </h3>
-                    <h4 className="carLocation">{car.location}</h4>
+                    <h3 className="carName">{car.year} {car.model} -{car.make} </h3>
+                    <h4 className="carLocation">Location: {car.location}</h4>
                 </Col>
                 <Col className="carPrice"  >
-                    <h1>{car.price}</h1>
+                    <h1>Ksh {car.price}</h1>
                     <h4 className="carRating">{car.rating}</h4>
                 </Col>
             </Row>
