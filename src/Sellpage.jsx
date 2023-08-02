@@ -53,7 +53,7 @@ function Sellpage() {
 
                 <label htmlFor="transmission">Transmission:</label>
                 <input type="text" id="transmission" name="transmission" value={carInfo.transmission} onChange={handleInputChange} required /><br /><br />
-
+ 
                 <label htmlFor="power">Power:</label>
                 <input type="text" id="power" name="power" value={carInfo.power} onChange={handleInputChange} required /><br /><br />
 
