@@ -5,8 +5,8 @@
   font-size: 20px;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: WHITE;
+  background-color:#242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -30,14 +30,14 @@ code {
 }
 /* AboutUs.css (create this file in the same folder as AboutUs.js) */
 
-.about-us-container {
+.about-us-containerIM {
   display: flex;
   align-items: center; 
   justify-content: space-around; 
   margin: 20px;
 }
 
-.car-image-container {
+.car-image-containerIM {
   flex: 0.5; 
 }
 
@@ -48,7 +48,7 @@ code {
   border-radius: 2rem;
 }
 
-.about-us-content {
+.about-us-contentIM {
   flex: 1; 
   padding: 20px;
 }

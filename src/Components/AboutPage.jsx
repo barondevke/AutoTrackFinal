@@ -5,11 +5,11 @@ import carImage from '/home/moringa/Documents/The-About/AutoTrackFinal/src/image
 
 const AboutPage = () => {
   return (
-    <div className="about-us-container">
-      <div className="car-image-container">
+    <div className="about-us-containerIM">
+      <div className="car-image-containerIM">
         <img src= {carImage} alt="Car" className="car-image" />
       </div>
-      <div className="about-us-content">
+      <div className="about-us-contentIM">
        
         <h2>About Us</h2>
         <p>
@@ -43,10 +43,7 @@ const AboutPage = () => {
             seeking their dream car or looking to sell their vehicle quickly and hassle-free."
 
           </p>
-        <Link to="/guide">
-
-          <button className='btnm'>Learn More</button>
-        </Link>
+       
       </div>
     </div>
   );
