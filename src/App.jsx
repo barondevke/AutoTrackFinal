@@ -82,7 +82,7 @@ function App() {
       <Routes>
         <Route path ="/" exact="true" element={<HomePage/>}/>
         <Route path ="/buy" exact="true" element={<BuyPage cars={finalArray}/>}/>
-        <Route path ="/sell" exact="true" element={<SellPage/>}/>
+        <Route path ="/sell" exact="true" element={<SellPage cars={finalArray} setCars={setFinalArray}/>}/>
         <Route path ="/about" exact="true" element={<AboutPage/>}/>
         <Route path ="/buy/:index" exact="true" element={<CarPage cars={finalArray}/>}/>
       </Routes>
