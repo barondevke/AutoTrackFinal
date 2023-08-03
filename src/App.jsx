@@ -8,9 +8,9 @@ import HomePage from './Components/HomePage'
 import SellPage from './Components/SellPage'
 import CarPage from './Components/CarPage'
 import BuyPage from './Components/BuyPage'
-import Login from './Login'
+import Login from './Components/Login'
 
-import Register from './Register'
+import Register from './Components/Register'
 
 
 function App() {
@@ -51,9 +51,10 @@ function App() {
         <Route exact path ="/" element={<HomePage/>}/>
         <Route exact path ="/buy" element={<BuyPage/>}/>
         <Route exact path ="/sell" element={<SellPage/>}/>
+         {currentForm === "login" ? <Route exact path ="/login" element={<Login changeForm={changeForm}/>}/>:<Route exact path ="/login" element={<Register changeForm={changeForm}/>}/>} 
       </Routes>
-     {/* <Payment/>*/}
-    {currentForm === "login" ? <Login changeForm={changeForm}/>:<Register  changeForm={changeForm}/>} 
+    
+   
     </>
   )
 }
