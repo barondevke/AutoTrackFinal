@@ -58,9 +58,9 @@ const HomePage = ({ isLoggedIn, userName }) => {
 
         <div className='car-image-container'>
           {showFirstImage ? (
-            <img src="public/images/_.jpeg" alt="Audi Q3 Sportback SUV" className='car-image' />
+            <img src="/images/_.jpeg" alt="Audi Q3 Sportback SUV" className='car-image' />
           ) : (
-            <img src="public/images/Very beautiful black coloured Mahindra XUV300 car design.jpeg" alt="Other Car Image" className='car-image' />
+            <img src="/images/Very beautiful black coloured Mahindra XUV300 car design.jpeg" alt="Other Car Image" className='car-image' />
           )}
         </div>
       </div>

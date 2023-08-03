@@ -467,7 +467,7 @@ nav ul li a.active {
 /* Css for Search Bar Ends  and price filter ends*/
 
 /* Start of sellpage css */
-#formDivCY .container {
+/* #formDivCY .container {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
@@ -524,7 +524,73 @@ nav ul li a.active {
 
 #formDivCY input [type="submit"]:hover {
     background-color: #0056b3;
+} */
+
+
+/* SellPage.css */
+#formDivCY {
+  text-align: center;
+  margin: 50px auto;
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
 }
+
+#formHeaderCy {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.formLabelCY {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.formInputCY {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #f44336;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d32f2f;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* End of sellpage css */
 
@@ -634,4 +700,55 @@ nav ul li a.active {
       max-width: 80%;
     }
   }
+
+  /* Login.css */
+.sign-in-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .sign-in-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .sign-in-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .sign-in-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #F44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .sign-in-container button:hover {
+    background-color: #E53935;
+  }
+  
+  .sign-in-container button:focus {
+    outline: none;
+  }
+  
+  .sign-in-container button:last-child {
+    margin-top: 10px;
+    background-color: transparent;
+    color: #F44336;
+    border: 1px solid #F44336;
+  }
+  
   
