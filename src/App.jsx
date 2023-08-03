@@ -11,12 +11,19 @@ import CarPage from './Components/CarPage'
 import BuyPage from './Components/BuyPage'
 import AboutPage from './Components/AboutPage'
 import Payment from './Components/Payment'
+import Login from './Components/Login'
+import Register from './Components/Register'
 
 
 function App() {
 
   const [data, setData] = useState([]);
   const [finalArray, setFinalArray] = useState([]);
+  const [currentForm, setCurrentForm] = useState("login")
+
+  const changeForm = (name) => {
+    setCurrentForm(name);
+  }
 
   function generateRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -86,7 +93,7 @@ function App() {
         <Route path="/sell" exact="true" element={<SellPage cars={finalArray} setCars={setFinalArray} />} />
         <Route path="/about" exact="true" element={<AboutPage />} />
         <Route path="/payment" exact="true" element={<Payment />} />
-
+        {currentForm === "login" ? <Route exact path="/login" element={<Login changeForm={changeForm} />} /> : <Route exact path="/login" element={<Register changeForm={changeForm} />} />}
         <Route path="/buy/:index" exact="true" element={<CarPage cars={finalArray} />} />
       </Routes>
       <Footer />

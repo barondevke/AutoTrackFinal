@@ -1,16 +1,22 @@
 import { signInWithEmailAndPassword } from "firebase/auth";
-import React, { useState } from "react";
-import { auth } from "../firebase.jsx"
+import React, { useState, } from "react";
+import { Navigate } from "react-router-dom";
+import { auth } from "../assets/firebase"
+import { useNavigate } from "react-router-dom";
 
 const Login = ({ changeForm }) => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
+    const navigate = useNavigate()
+
+
     const signIn = (e) => {
         e.preventDefault();
         signInWithEmailAndPassword(auth, email, password)
             .then(() => {
-                alert(`WelcomeBack ${email}`)
+                alert(`Welcome back ${email}`)
+                navigate('/')
             })
             .catch(() => {
                 alert("User not Found");
