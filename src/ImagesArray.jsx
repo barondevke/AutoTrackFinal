@@ -49,6 +49,8 @@ let carArray = [
     "https://media.wired.com/photos/5d09594a62bcb0c9752779d9/1:1/w_1500,h_1500,c_limit/Transpo_G70_TA-518126.jpg",
     "https://parkers-images.bauersecure.com/wp-images/17053/930x620/00-parkers-best-new-cars-coming-2023-2024-polestar-4-lead-alt.jpg",
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ0wzUVOOj-foNq1IdxYdmwpRqFCXlb4o7Lw&usqp=CAU"
+
 ];
 
 export default carArray;
+

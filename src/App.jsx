@@ -17,6 +17,7 @@ function App() {
   const [data, setData] = useState([]);
   const [finalArray, setFinalArray] = useState([]);
 
+
   function generateRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
@@ -53,6 +54,7 @@ function App() {
   }, []);
 
   useEffect(() => {
+
     if (Array.isArray(data)) {
       const combinedData = data.map((item, index) => {
         return {
@@ -71,6 +73,7 @@ function App() {
       setFinalArray(combinedData);
     }
   }, [data]);
+
 
   useEffect(() => {
     console.log(finalArray);
