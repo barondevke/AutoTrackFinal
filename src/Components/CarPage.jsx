@@ -24,20 +24,20 @@ export default function CarPage({ cars }) {
 
 
     return (
-        <div className="allDetails">
-            <img className="carImage" src={car.url}></img>
-            <Row className="carInfo">
+        <div className="allDetailsSN">
+            <img className="carImageSN" src={car.url}></img>
+            <Row className="carInfoSN">
                 <Col  >
-                    <h1 className="carName">{car.year} {car.model} -{car.make} </h1>
-                    <h2 className="carLocation">Location: {car.location}</h2>
+                    <h1 className="carNameSN">{car.year} {car.model} -{car.make} </h1>
+                    <h2 className="carLocationSN">Location: {car.location}</h2>
                 </Col>
-                <Col className="carPrice"  >
+                <Col className="carPriceSN"  >
                     <h1 className="carPriceValueSN">Ksh {car.price}</h1>
-                    <h4 className="carRating">{printStars(car.rating)}</h4>
+                    <h4 className="carRatingSN">{printStars(car.rating)}</h4>
                 </Col>
             </Row>
             <Row>
-                <Col className="stats">
+                <Col className="statsSN">
                     <Row>
                         <Col>
                             <h4><FontAwesomeIcon icon={faRoad} style={{ color: "#6f61c0", }} /> Kms Driven</h4>
@@ -46,7 +46,7 @@ export default function CarPage({ cars }) {
                             <h4><FontAwesomeIcon icon={faGauge} style={{ color: "#6f61c0", }} /> Consumption</h4>
 
                         </Col>
-                        <Col className="rightStats">
+                        <Col className="rightStatsSN">
                             <h4>{car.kmsDriven}</h4>
                             <h4>{car.transmissionType}</h4>
                             <h4>{car.fuelType}</h4>
@@ -61,7 +61,7 @@ export default function CarPage({ cars }) {
             </Row>
             <Row>
                 <Col>
-                    <button className="buyBtn">Buy Now</button>
+                    <button className="buyBtnSN">Buy Now</button>
                 </Col>
             </Row>
 
