@@ -42,7 +42,7 @@
 /*End of Carpage*/
 
 /* About page starts from here */
-:root {
+/* :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
@@ -88,14 +88,61 @@
     cursor: pointer;
     font-weight: bold;
     background-color: aliceblue;
-}
+} */
+/* AboutPage.css */
+.about-us-containerIM {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .car-image-containerIM {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .car-image {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .about-us-contentIM {
+    flex: 1;
+  }
+  
+  h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #666;
+  }
+  
+  h3 {
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
 
 /* About ends here */
 
 
 
 /*NavBar Css*/
-nav {
+/* nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -145,7 +192,6 @@ nav ul li a.active {
     color: orange;
 }
 
-/*navbar media queries*/
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
@@ -186,6 +232,99 @@ nav ul li a.active {
     }
   }
 
+   */
+
+
+   /* NavBar CSS */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(35, 30, 37);
+    padding: 10px 50px;
+    color: white;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .logo i {
+    color: #ffffff96;
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+  
+  .logo-text {
+    color: #F44336;
+    font-size: 34px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 70px;
+  }
+  
+  nav ul li a {
+    color: #ffffffd5;
+    text-decoration: none;
+    font-size: 35px;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a.active {
+    color: #F44336; /* Match the footer link hover color */
+  }
+  
+  /* NavBar Media Queries */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      background-color: rgb(35, 30, 37);
+      padding: 10px;
+    }
+  
+    .logo {
+      margin-bottom: 20px;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+  
+    nav ul li a {
+      font-size: 24px;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    nav {
+      padding: 10px 30px;
+    }
+  
+    nav ul li {
+      margin-left: 40px;
+    }
+  
+    nav ul li a {
+      font-size: 28px;
+    }
+  }
   
 
 
@@ -466,65 +605,6 @@ nav ul li a.active {
 
 /* Css for Search Bar Ends  and price filter ends*/
 
-/* Start of sellpage css */
-/* #formDivCY .container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-}
-
-#formDivCY h1 {
-    text-align: center;
-}
-
-#formDivCY form {
-    display: flex;
-    flex-direction: column;
-}
-
-#formDivCY label {
-    margin-bottom: 5px;
-    font-weight: bold;
-    margin-left: 20px;
-}
-
-#formDivCY input {
-    background-color: #f0f0f0;
-    width: 80%;
-    height: 50px;
-    margin-left: 20px;
-    color: #000;
-}
-
-#formDivCY button {
-    margin: 20px;
-    width: 150px;
-    height: 50px;
-    border-radius: 10px;
-}
-
-#formDivCY input [type="text"] {
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#formDivCY input [type="submit"] {
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#formDivCY input [type="submit"]:hover {
-    background-color: #0056b3;
-} */
 
 
 /* SellPage.css */
@@ -577,20 +657,6 @@ button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* End of sellpage css */
 
