@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRoad, faGear, faGasPump, faGauge } from "@fortawesome/free-solid-svg-icons";
 
@@ -8,6 +8,7 @@ import { faRoad, faGear, faGasPump, faGauge } from "@fortawesome/free-solid-svg-
 export default function CarPage({ cars }) {
     const { index } = useParams()
     const car = cars[index]
+    const navigate = useNavigate()
 
 
     /*Function for rating */
@@ -20,6 +21,14 @@ export default function CarPage({ cars }) {
         }
         return rating
 
+    }
+
+    function navigateToPaypal() {
+        useEffect(() => {
+            navigate('/payment')
+
+
+        }, [])
     }
 
 
@@ -61,7 +70,7 @@ export default function CarPage({ cars }) {
             </Row>
             <Row>
                 <Col>
-                    <button className="buyBtnSN">Buy Now</button>
+                    <button onClick={navigateToPaypal()} className="buyBtnSN">Buy Now</button>
                 </Col>
             </Row>
 

@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import carImage from '/home/moringa/Documents/The-About/AutoTrackFinal/src/images/buga.avif'
+/*import carImage from '/home/moringa/Documents/The-About/AutoTrackFinal/src/images/buga.avif'8*/
 
 
 const AboutPage = () => {
     return (
         <div className="about-us-containerIM">
             <div className="car-image-containerIM">
-                <img src={carImage} alt="Car" className="car-image" />
+                <img src='https://media.wired.com/photos/5927284ff3e2356fd800b9b4/master/w_1600%2Cc_limit/03_CHIRON_34-front_WEB.jpg' alt="Car" className="car-image" />
             </div>
             <div className="about-us-contentIM">
 

@@ -10,6 +10,7 @@ import SellPage from './Components/SellPage'
 import CarPage from './Components/CarPage'
 import BuyPage from './Components/BuyPage'
 import AboutPage from './Components/AboutPage'
+import Payment from './Components/Payment'
 
 
 function App() {
@@ -84,6 +85,8 @@ function App() {
         <Route path="/buy" exact="true" element={<BuyPage cars={finalArray} />} />
         <Route path="/sell" exact="true" element={<SellPage cars={finalArray} setCars={setFinalArray} />} />
         <Route path="/about" exact="true" element={<AboutPage />} />
+        <Route path="/payment" exact="true" element={<Payment />} />
+
         <Route path="/buy/:index" exact="true" element={<CarPage cars={finalArray} />} />
       </Routes>
       <Footer />

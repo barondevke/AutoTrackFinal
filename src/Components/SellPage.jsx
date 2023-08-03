@@ -87,7 +87,7 @@ function SellPage({ cars, setCars }) {
 
         setCars([...cars, newCarInfo])
 
-        navigate(`/buy/${cars.length - 1}`)
+
 
         setFuelConsumption("");
         setFuelType("");
@@ -101,7 +101,9 @@ function SellPage({ cars, setCars }) {
         setUrl("");
         setYear("");
 
-        console.log(cars);
+
+        navigate(`/buy`)
+        alert('Car added successfully!')
     };
 
     return (
