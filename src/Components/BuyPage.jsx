@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import React from "react";
 import CarItem from "./CarItem";
@@ -70,6 +71,7 @@ export default function BuyPage({ cars }) {
         setCarNotFound(false);
         filterCarsByPrice(priceFilter);
     }, [cars, priceFilter]);
+
 
     return (
         <>
