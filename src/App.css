@@ -113,3 +113,8 @@ nav ul li a.active {
 }
 
 /* Form styling*/
+.button{
+    background-color: blue;
+    width:30%;
+    margin-left:10rem;
+}
