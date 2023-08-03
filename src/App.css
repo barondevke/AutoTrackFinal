@@ -205,7 +205,7 @@ nav ul li a.active {
 
 
 /*Footer Css*/
-#footer {
+/* #footer {
     background-color: #5DADE2;
     color: white;
     padding: 40px;
@@ -269,7 +269,77 @@ nav ul li a.active {
     bottom: 10px;
     left: 37px;
     font-size: 20px;
-}
+} 
+*/
+/* Footer.css */
+#footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 0;
+  }
+  
+  #footerWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #footerArrow {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  #getInTouch p {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+  
+  #footerTextGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 20px;
+  }
+  
+  .footerTextItem {
+    line-height: 1.8;
+  }
+  
+  .footerTextTitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #F44336;
+  }
+  
+  .footerTextItem p,
+  .footerTextItem address {
+    font-size: 16px;
+  }
+  
+  .footerSocials {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .footerSocials li:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+  .footerSocials a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .copywrite {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+  }
+  
 
 /*End of footer Css*/
 
@@ -505,6 +575,9 @@ nav ul li a.active {
 
 /*End of Homepage styling*/
 
+
+
+
 /* HomePage.css */
 .homepage {
     text-align: center;
@@ -534,7 +607,7 @@ nav ul li a.active {
   
   .car-image {
     max-width: 60%;
-    opacity: 0.7; /* Set the opacity to make the images partially transparent */
+    opacity: 0.8; /* Set the opacity to make the images partially transparent */
   }
   
   /* Homepage Media Queries */
