@@ -111,3 +111,81 @@ nav ul li a.active {
     left: 37px;
     font-size: 20px;
 }
+
+.carImage {
+    height: 50vh;
+    width: 100vw;
+}
+
+.stats {
+    margin-top: 2%;
+    color: #6F61C0;
+}
+
+.carInfo {
+    margin-top: 2%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.rightStats {
+    padding-right: 70%;
+}
+
+.carPrice {
+    padding-left: 40%;
+}
+
+.carPriceValueSN {
+    color: rgb(46, 204, 113);
+    ;
+}
+
+.allDetails {
+    padding: auto;
+}
+
+.buyBtn {
+    font-size: 2rem;
+    background-color: #5DADE2;
+    color: yellow;
+    margin-top: 1.2%;
+    margin-bottom: 1.7%;
+}
+
+#carsHolderJk {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.carContainerJk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #D6EAF8;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.carContainerJk img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    /* Ensure the image maintains its aspect ratio */
+    margin: 0;
+    padding: 0;
+}
+
+.carContainerJk:hover {
+    background-color: #5D6D7E;
+}
+
+.botCardInternalJk {
+    margin-top: 10px;
+}
+
+.botCardInternalJk h2,
+.botCardInternalJk h3 {
+    margin: 0;
+}

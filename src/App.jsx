@@ -9,12 +9,14 @@ import HomePage from './Components/HomePage'
 import SellPage from './Components/SellPage'
 import CarPage from './Components/CarPage'
 import BuyPage from './Components/BuyPage'
+import AboutPage from './Components/AboutPage'
 
 
 function App() {
 
   const [data, setData] = useState([]);
-  const [ finalArray, setFinalArray] = useState([]);
+  const [finalArray, setFinalArray] = useState([]);
+
 
   function generateRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -52,24 +54,26 @@ function App() {
   }, []);
 
   useEffect(() => {
-    if(Array.isArray(data)) {
-    const combinedData = data.map((item, index) => {
-      return {
-        ...item,
-        url: carArray[index],
-        price: generateRandomNumber(1000,800)*1000,
-        rating: generateRandomNumber(2,5),
-        kmsDriven: generateRandomNumber(5,350)*100,
-        fuelConsumption: generateRandomNumber(20,60) + `L/100kms`,
-        location : getRandomStringFromArray(["Nairobi", "Mombasa", "Nakuru", "New York", "Mumbai", "London", "Rome", "Paris", "Madrid", "Eldoret", "Lamu", "Malindi", "Barcelona","Voi", "Manchester"]),
-        fuelType : getRandomStringFromArray(["Petrol", "Diesel"]),
-        transmissionType: getRandomStringFromArray(["Manual", "Automatic", "Dual-Transmission"]),
-        key: item.id,
-      };
-    });
-    setFinalArray(combinedData);
-   }
-  }, [data]); 
+
+    if (Array.isArray(data)) {
+      const combinedData = data.map((item, index) => {
+        return {
+          ...item,
+          url: carArray[index],
+          price: generateRandomNumber(1000, 8000) * 1000,
+          rating: generateRandomNumber(2, 5),
+          kmsDriven: generateRandomNumber(5, 350) * 100,
+          fuelConsumption: generateRandomNumber(20, 60) + `L/100kms`,
+          location: getRandomStringFromArray(["Nairobi", "Mombasa", "Nakuru", "New York", "Mumbai", "London", "Rome", "Paris", "Madrid", "Eldoret", "Lamu", "Malindi", "Barcelona", "Voi", "Manchester"]),
+          fuelType: getRandomStringFromArray(["Petrol", "Diesel"]),
+          transmissionType: getRandomStringFromArray(["Manual", "Automatic", "Dual-Transmission"]),
+          key: item.id,
+        };
+      });
+      setFinalArray(combinedData);
+    }
+  }, [data]);
+
 
   useEffect(() => {
     console.log(finalArray);
@@ -77,14 +81,15 @@ function App() {
 
   return (
     <>
-    <NavBar/>
+      <NavBar />
       <Routes>
-        <Route path ="/" exact="true" element={<HomePage/>}/>
-        <Route path ="/buy" exact="true" element={<BuyPage/>}/>
-        <Route path ="/sell" exact="true" element={<SellPage/>}/>
-        <Route path ="/buy/:id" exact="true" element={<CarPage/>}/>
+        <Route path="/" exact="true" element={<HomePage />} />
+        <Route path="/buy" exact="true" element={<BuyPage cars={finalArray} />} />
+        <Route path="/sell" exact="true" element={<SellPage />} />
+        <Route path="/about" exact="true" element={<AboutPage />} />
+        <Route path="/buy/:index" exact="true" element={<CarPage cars={finalArray} />} />
       </Routes>
-    <Footer/>
+      <Footer />
     </>
   )
 }
