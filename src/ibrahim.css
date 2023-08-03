@@ -111,3 +111,54 @@ nav ul li a.active {
     left: 37px;
     font-size: 20px;
 }
+
+
+/* About page starts from here */
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 20px;
+  
+    color-scheme: light dark;
+    color: WHITE;
+    background-color:#242424;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+  .about-us-containerIM {
+    display: flex;
+    align-items: center; 
+    justify-content: space-around; 
+    margin: 20px
+  }
+  
+  .car-image-containerIM {
+    flex: 0.5; 
+  }
+  
+  .car-image {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 2rem;
+  }
+  
+  .about-us-contentIM {
+    flex: 1; 
+    padding: 20px;
+  }
+  .btnm{
+    border-radius: 3rem;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: aliceblue;
+  }
+
+  /* About ends here */
+  

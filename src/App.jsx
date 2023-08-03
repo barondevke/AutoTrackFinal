@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Routes, Route, Link } from 'react-router-dom'
 import axios from 'axios'
-import './App.css'
+import './ibrahim.css'
 import NavBar from './Components/NavBar'
 import Footer from './Components/Footer'
 import HomePage from './Components/HomePage'
