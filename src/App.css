@@ -1,3 +1,98 @@
+/*Carpage*/
+.carImageSN {
+    height: 50vh;
+    width: 100vw;
+}
+
+.statsSN {
+    margin-top: 2%;
+    color: #6F61C0;
+}
+
+.carInfoSN {
+    margin-top: 2%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.rightStatsSN {
+    padding-right: 70%;
+}
+
+.carPriceSN {
+    padding-left: 40%;
+}
+
+.carPriceValueSN {
+    color: rgb(46, 204, 113);
+    ;
+}
+
+.allDetailsSN {
+    padding: auto;
+}
+
+.buyBtnSN {
+    font-size: 2rem;
+    background-color: #5DADE2;
+    color: yellow;
+    margin-top: 1.2%;
+    margin-bottom: 1.7%;
+}
+
+/*End of Carpage*/
+
+/* About page starts from here */
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 20px;
+
+    color-scheme: light dark;
+    color: WHITE;
+    background-color: #242424;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+.about-us-containerIM {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px
+}
+
+.car-image-containerIM {
+    flex: 0.5;
+}
+
+.car-image {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 2rem;
+}
+
+.about-us-contentIM {
+    flex: 1;
+    padding: 20px;
+}
+
+.btnm {
+    border-radius: 3rem;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: aliceblue;
+}
+
+/* About ends here */
+
+/*NavBar Css*/
 nav {
     display: flex;
     justify-content: space-between;
@@ -46,6 +141,9 @@ nav ul li a.active {
     color: #F44336;
 }
 
+/*End of NavBar Css*/
+
+/*Footer Css*/
 #footer {
     background-color: #5DADE2;
     color: white;
@@ -112,50 +210,15 @@ nav ul li a.active {
     font-size: 20px;
 }
 
-.carImage {
-    height: 50vh;
-    width: 100vw;
-}
+/*End of footer Css*/
 
-.stats {
-    margin-top: 2%;
-    color: #6F61C0;
-}
-
-.carInfo {
-    margin-top: 2%;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.rightStats {
-    padding-right: 70%;
-}
-
-.carPrice {
-    padding-left: 40%;
-}
-
-.carPriceValueSN {
-    color: rgb(46, 204, 113);
-    ;
-}
-
-.allDetails {
-    padding: auto;
-}
-
-.buyBtn {
-    font-size: 2rem;
-    background-color: #5DADE2;
-    color: yellow;
-    margin-top: 1.2%;
-    margin-bottom: 1.7%;
-}
-
+/*Buy Page Css*/
 #carsHolderJk {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
 }
 
 .carContainerJk {
@@ -189,3 +252,147 @@ nav ul li a.active {
 .botCardInternalJk h3 {
     margin: 0;
 }
+
+/*End of Buy Page Css*/
+
+/* SearchBar and priceFilter css */
+.search-bar-containerJk {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-barJk {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 900px;
+    margin-bottom: 20px;
+}
+
+.search-barJk input {
+    border: none;
+    background: transparent;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+    padding: 5px;
+    color: #000;
+}
+
+.search-barJk input::placeholder {
+    color: #888;
+}
+
+.search-barJk button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+    color: #000;
+}
+
+.search-barJk button:hover {
+    color: #0066cc;
+}
+
+.vertical-lineJk {
+    width: 1px;
+    height: 24px;
+    background-color: #000;
+    margin: 0 8px;
+}
+
+.price-filter-containerJk {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
+
+.price-filter-selectJk {
+    font-size: 16px;
+    padding: 6px 12px;
+    margin-right: 10px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+}
+
+.price-filter-buttonJk {
+    font-size: 16px;
+    padding: 6px 12px;
+    background-color: #D6EAF8;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* Css for Search Bar Ends  and price filter ends*/
+
+/* Start of sellpage css */
+#formDivCY .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#formDivCY h1 {
+    text-align: center;
+}
+
+#formDivCY form {
+    display: flex;
+    flex-direction: column;
+}
+
+#formDivCY label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+#formDivCY input {
+    background-color: #f0f0f0;
+    width: 80%;
+    height: 50px;
+    margin-left: 20px;
+    color: #000;
+}
+
+#formDivCY button {
+    margin: 20px;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#formDivCY input [type="text"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#formDivCY input [type="submit"] {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#formDivCY input [type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* End of sellpage css */
