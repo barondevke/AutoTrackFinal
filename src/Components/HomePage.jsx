@@ -1,44 +1,75 @@
-import React from 'react';
+// import React from 'react';
+// import { Link } from 'react-router-dom';
+
+// const HomePage = ({ isLoggedIn, userName }) => {
+//     return (
+//         <div className='homepage'>
+           
+//             {isLoggedIn ? <h2>Welcome back, {userName}!</h2> : null}
+
+//             <div className='home1'>
+//                 <h1>
+//                     Your One-Stop Destination for <br /> <span style={{ color: 'orange' }}>Buying</span> and{' '}
+//                     <span style={{ color: 'orange' }}>Selling</span> <br /> Quality Cars
+//                 </h1>
+
+//                 <div className='car-image-container'>
+//                     <img src="/images/Audi Q3 Sportback SUV.jpeg" alt="" className='car-image' />
+//                 </div>
+//             </div>
+
+//             <p>
+//                 <Link to="/login">Login to your account</Link>
+//             </p>
+
+
+//         </div>
+//     );
+// };
+
+// export default HomePage;
+
+
+
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const HomePage = ({ isLoggedIn, userName }) => {
-    return (
-        <div className='homepage'>
-            <div className='logo-container'>
-                <img
-                    src="/images/Car Logotype Premium Logo_ ilustración de stock 681412297 _ Shutterstock.jpeg"
-                    alt="Carlogo"
-                    className='logo-img logo1'
-                />
-                <img
-                    src="/images/AT_ Monogram of Two letters A & T.jpeg"
-                    alt="Car 2"
-                    className='logo-img logo2'
-                />
-            </div>
-            {isLoggedIn ? <h2>Welcome back, {userName}!</h2> : null}
+  const [showFirstImage, setShowFirstImage] = useState(true);
 
-            <div className='home1'>
-                <h1>
-                    Your One-Stop Destination for <span style={{ color: 'orange' }}>Buying</span> and{' '}
-                    <span style={{ color: 'orange' }}>Selling</span> Quality Cars
-                </h1>
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setShowFirstImage((prevShowFirstImage) => !prevShowFirstImage);
+    }, 3000); // Change image every 3 seconds
 
-                <div className='car-image-container'>
-                    <img src="/images/Audi Q3 Sportback SUV.jpeg" alt="" className='car-image' />
-                </div>
-            </div>
+    return () => clearInterval(interval); // Clear the interval on component unmount
 
-            <p className='watermark'>AutoTrack</p>
+  }, []);
 
+  return (
+    <div className='homepage'>
+      {isLoggedIn ? <h2>Welcome back, {userName}!</h2> : null}
 
-            <p>
-                <Link to="/login">Login to your account</Link>
-            </p>
+      <div className='home1'>
+        <h1>
+          Your One-Stop Destination for <br /> <span style={{ color: 'orange' }}>Buying</span> and{' '}
+          <span style={{ color: 'orange' }}>Selling</span> <br /> Quality Cars
+        </h1>
 
-
+        <div className='car-image-container'>
+          {showFirstImage ? (
+            <img src="public/images/_.jpeg" alt="Audi Q3 Sportback SUV" className='car-image' />
+          ) : (
+            <img src="public/images/Very beautiful black coloured Mahindra XUV300 car design.jpeg" alt="Other Car Image" className='car-image' />
+          )}
         </div>
-    );
+      </div>
+
+      <p>
+        <Link to="/login">Login to your account</Link>
+      </p>
+    </div>
+  );
 };
 
 export default HomePage;

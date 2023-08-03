@@ -457,3 +457,108 @@ nav ul li a.active {
 }
 
 /* End of sellpage css */
+
+/* Homepage styling*/
+
+/* HomePage.css */
+/* .homepage {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+  }
+  
+  .home1 {
+    margin-bottom: 30px;
+  }
+  
+  h1 {
+    font-size: 62px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .car-image-container {
+    max-width: 100%;
+  }
+  
+  .car-image {
+    max-width: 100%;
+  }
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+    margin-bottom: 10px; 
+  }
+
+  .homepage {
+    padding: 10px;
+    height: 50vh;
+
+    
+  }
+} */
+
+
+/*End of Homepage styling*/
+
+/* HomePage.css */
+.homepage {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    position: relative;
+  }
+  
+  .home1 {
+    margin-bottom: 30px;
+  }
+  
+  h1 {
+    font-size: 62px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .car-image-container {
+    max-width: 100%;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+  }
+  
+  .car-image {
+    max-width: 60%;
+    opacity: 0.7; /* Set the opacity to make the images partially transparent */
+  }
+  
+  /* Homepage Media Queries */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+  
+    .homepage {
+      padding: 10px;
+      height: 50vh;
+    }
+  
+    .car-image-container {
+      max-width: 40%;
+    }
+  
+    .home1 {
+      margin-bottom: 80px;
+    }
+  
+    .car-image {
+      max-width: 80%;
+    }
+  }
+  
