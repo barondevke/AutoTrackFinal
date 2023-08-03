@@ -16,8 +16,6 @@ function Sellpage() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Here you can add logic to handle the form submission
-        // For example, sending the data to a backend server or storing it in state/database
         console.log(carInfo);
     };
      
