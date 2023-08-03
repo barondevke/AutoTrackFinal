@@ -111,3 +111,48 @@ nav ul li a.active {
     left: 37px;
     font-size: 20px;
 }
+
+/* Start of sellpage css */
+.container CY {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  h1 CY{
+    text-align:center ;
+  }
+  
+  form CY{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label CY {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input CY[type="text"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input CY[type="submit"] {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input CY[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  /* End of sellpage css */
