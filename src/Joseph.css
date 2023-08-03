@@ -237,7 +237,7 @@ nav ul li a.active {
   /* Css for Search Bar Ends  and price filter ends*/
   
 /* Start of sellpage css */
-  #formDivCY .container {
+  /* #formDivCY .container {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
@@ -294,5 +294,5 @@ nav ul li a.active {
   
   #formDivCY input [type="submit"]:hover {
     background-color: #0056b3;
-  }
+  } */
   /* End of sellpage css */
