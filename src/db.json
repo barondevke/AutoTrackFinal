@@ -1,0 +1,25 @@
+{
+  "Personal": [
+    {
+      "id": 1,
+      "email": "nataliewanjiru19@gmail.com",
+      "fullName": "Natalie Wanjiru",
+      "username": "Natty",
+      "password": 2002
+    },
+    {
+      "email": "natalieamazon16@gmail.com",
+      "fullName": "Natalie wanjiru",
+      "username": "Natalie",
+      "password": "5678",
+      "id": 2
+    },
+    {
+      "email": "natalieamazon16@gmail.com",
+      "fullName": "Natalie wanjiru",
+      "username": "Natalie",
+      "password": "Kaizen2004",
+      "id": 3
+    }
+  ]
+}

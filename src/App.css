@@ -111,3 +111,10 @@ nav ul li a.active {
     left: 37px;
     font-size: 20px;
 }
+
+/* Form styling*/
+.button{
+    background-color: blue;
+    width:30%;
+    margin-left:10rem;
+}
