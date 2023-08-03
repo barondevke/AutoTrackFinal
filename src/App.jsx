@@ -1,15 +1,16 @@
 import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
-import axios from 'axios'
-import './App.css'
+
+
 import NavBar from './Components/NavBar'
-import Footer from './Components/Footer'
+
 import HomePage from './Components/HomePage'
 import SellPage from './Components/SellPage'
 import CarPage from './Components/CarPage'
 import BuyPage from './Components/BuyPage'
 import Login from './Login'
-import Payment from './Payment'
+
+import Register from './Register'
 
 
 function App() {
@@ -51,8 +52,8 @@ function App() {
         <Route exact path ="/buy" element={<BuyPage/>}/>
         <Route exact path ="/sell" element={<SellPage/>}/>
       </Routes>
-      <Payment/>
-    {/*{currentForm === "login" ? <Login changeForm={changeForm}/>:<Register  changeForm={changeForm}/>} */}
+     {/* <Payment/>*/}
+    {currentForm === "login" ? <Login changeForm={changeForm}/>:<Register  changeForm={changeForm}/>} 
     </>
   )
 }

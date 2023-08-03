@@ -1,51 +1,43 @@
-import React from 'react'
-import { useState,useEffect } from 'react'
+import { signInWithEmailAndPassword } from "firebase/auth";
+import React, { useState } from "react";
+import { auth } from "./firebase.jsx"
 
-export default function Login({changeForm}) {
-  const[email, setEmail]=useState("")
-  const[username,setUserName]=useState("")
-  const[password,setPassword]=useState("")
-  const[infos,setInfos]=useState([])
+const Login = ({changeForm}) => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-useEffect(()=>{
-  fetch('http://localhost:3000/Personal')
-  .then(res=>res.json())
-  .then(data=>setInfos(data))
-},[])
-   
-  const handleSubmit= (e) =>{
-    e.preventDefault()
-    
-    
-    const userFound = infos.find((item) => item.username === username && item.password === password);
-    if (userFound) {
-      alert(`Welcome ${username}`);
-    } else {
-      alert('User not found');
-    }
-  
-     
-    setEmail("")
-    setUserName("")
-    setPassword("")
-  }
-
+  const signIn = (e) => {
+    e.preventDefault();
+    signInWithEmailAndPassword(auth, email, password)
+      .then(() => {
+        alert(`WelcomeBack ${email}`)
+      })
+      .catch(() => {
+        alert("User not Found");
+      });
+  };
 
   return (
-    <>
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="email">Email: </label>
-       <input type="email" value={email} name="email" id="email" onChange={(e)=> setEmail(e.target.value)} placeholder="Input your email..." required/> 
-        <br></br>
-      <label htmlFor="username">Username: </label>
-       <input type="username" value={username} name="username" id="username" onChange={(e)=> setUserName(e.target.value)} placeholder="Your username" required/> 
-         <br></br>
-      <label htmlFor="password">Password: </label>
-        <input type="password" value={password} name="password" id="password" onChange={(e)=> setPassword(e.target.value)} placeholder="*******" required/>
-        <br></br>
-      <button type="submit">Login</button>
-    </form> 
-    <button onClick={()=>{changeForm("register")}} >Don't have an account</button>
-  </>
-  )
-}
+    <div className="sign-in-container">
+      <form onSubmit={signIn}>
+        <h1>Log In to your Account</h1>
+        <input
+          type="email"
+          placeholder="Enter your email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        ></input>
+        <input
+          type="password"
+          placeholder="Enter your password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        ></input>
+        <button type="submit">Log In</button>
+      </form>
+      <button onClick={()=>{changeForm("register")}} >Don't have an account</button>
+    </div>
+  );
+};
+
+export default Login;
