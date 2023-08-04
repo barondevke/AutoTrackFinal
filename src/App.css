@@ -1,113 +1,561 @@
+/*Carpage*/
+.carImageSN {
+    height: 50vh;
+    width: 100vw;
+}
+
+.statsSN {
+    margin-top: 2%;
+    color: #6F61C0;
+}
+
+.carInfoSN {
+    margin-top: 2%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.rightStatsSN {
+    padding-right: 70%;
+}
+
+.carPriceSN {
+    padding-left: 40%;
+}
+
+.carPriceValueSN {
+    color: rgb(46, 204, 113);
+    ;
+}
+
+.allDetailsSN {
+    padding: auto;
+}
+
+.buyBtnSN {
+    font-size: 2rem;
+    background-color: #5DADE2;
+    color: yellow;
+    margin-top: 1.2%;
+    margin-bottom: 1.7%;
+}
+
+/*End of Carpage*/
+
+
+/* AboutPage.css */
+.about-us-containerIM {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .car-image-containerIM {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .car-image {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .about-us-contentIM {
+    flex: 1;
+  }
+  
+  h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #666;
+  }
+  
+  h3 {
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+
+/* About ends here */
+
+
+
+   /* NavBar CSS */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #5DADE2;
+    background-color: rgb(35, 30, 37);
     padding: 10px 50px;
     color: white;
-}
-
-.logo {
+  }
+  
+  .logo {
     display: flex;
     align-items: center;
-}
-
-.logo i {
-    color: #fff;
+    flex-direction: column;
+  }
+  
+  .logo i {
+    color: #ffffff96;
     font-size: 28px;
-    margin-right: 10px;
-}
-
-.logo-text {
+    margin-bottom: 5px;
+  }
+  
+  .logo-text {
     color: #F44336;
-    font-size: 24px;
-}
-
-nav ul {
+    font-size: 34px;
+  }
+  
+  nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-}
-
-nav ul li {
+  }
+  
+  nav ul li {
     margin-left: 70px;
-}
-
-nav ul li a {
-    color: white;
+  }
+  
+  nav ul li a {
+    color: #ffffffd5;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 35px;
     transition: color 0.3s ease;
-}
+  }
+  
+  nav ul li a:hover,
+  nav ul li a.active {
+    color: #F44336; /* Match the footer link hover color */
+  }
+  
+  /* NavBar Media Queries */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      background-color: rgb(35, 30, 37);
+      padding: 10px;
+    }
+  
+    .logo {
+      margin-bottom: 20px;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+  
+    nav ul li a {
+      font-size: 24px;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    nav {
+      padding: 10px 30px;
+    }
+  
+    nav ul li {
+      margin-left: 40px;
+    }
+  
+    nav ul li a {
+      font-size: 28px;
+    }
+  }
 
-nav ul li a:hover,
-nav ul li a.active {
-    color: #F44336;
-}
+/*End of NavBar Css*/
 
+/* Footer.css */
 #footer {
-    background-color: #5DADE2;
-    color: white;
-    padding: 40px;
-    position: relative;
-}
-
-#footerWrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    justify-items: flex-start;
-}
-
-#footerArrow {
-    grid-column: 1 / span 2;
-}
-
-.scroll-to-top {
-    color: #F44336;
-    font-size: 190px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-}
-
-#getInTouch {
-    grid-column: 1 / -1;
-    font-size: 90px;
-}
-
-#footerTextGrid {
-    display: grid;
-    grid-template-columns: 500px 500px 200px;
-    gap: 90px;
-}
-
-.footerTextItem {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 0;
+  }
+  
+  #footerWrapper {
     display: flex;
     flex-direction: column;
-    font-size: 40px;
-}
+    align-items: center;
+  }
+  
+  #footerArrow {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  #getInTouch p {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+  
+  #footerTextGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 20px;
+  }
+  
+  .footerTextItem {
+    line-height: 1.8;
+  }
+  
+  .footerTextTitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #F44336;
+  }
+  
+  .footerTextItem p,
+  .footerTextItem address {
+    font-size: 16px;
+  }
+  
+  .footerSocials {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .footerSocials li:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+  .footerSocials a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .copywrite {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+  }
 
-.footerTextTitle {
+/*End of footer Css*/
+
+
+/* BuyPage.css */
+
+#carsHolderJk {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+  }
+  
+  .carContainerJk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #D6EAF8; /* Light blue - adjust to match the footer */
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+  }
+  
+  .carContainerJk img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
     margin: 0;
+    padding: 0;
+  }
+  
+  .carContainerJk:hover {
+    background-color: #5D6D7E; /* Darker blue on hover - adjust to match the footer */
+  }
+  
+  .botCardInternalJk {
+    margin-top: 10px;
+  }
+  
+  .botCardInternalJk h2,
+  .botCardInternalJk h3 {
+    margin: 0;
+  }
+
+/*End of Buy Page Css*/
+
+/* SearchBar and priceFilter css */
+.search-bar-containerJk {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px;
 }
 
-.footerSocials li {
+.search-barJk {
     display: flex;
     align-items: center;
-    margin-bottom: 8px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 900px;
+    margin-bottom: 20px;
 }
 
-.footerSocials li a {
-    color: white;
-    text-decoration: none;
-    font-size: 45px;
+.search-barJk input {
+    border: none;
+    background: transparent;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+    padding: 5px;
+    color: #000;
 }
 
-.copywrite {
+.search-barJk input::placeholder {
+    color: #888;
+}
+
+.search-barJk button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+    color: #000;
+}
+
+.search-barJk button:hover {
+    color: #0066cc;
+}
+
+.vertical-lineJk {
+    width: 1px;
+    height: 24px;
+    background-color: #000;
+    margin: 0 8px;
+}
+
+.price-filter-containerJk {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
+
+.price-filter-selectJk {
+    font-size: 16px;
+    padding: 6px 12px;
+    margin-right: 10px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+}
+
+.price-filter-buttonJk {
+    font-size: 16px;
+    padding: 6px 12px;
+    background-color: #D6EAF8;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* Css for Search Bar Ends  and price filter ends*/
+
+
+
+/* SellPage.css */
+#formDivCY {
+  text-align: center;
+  margin: 50px auto;
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+#formHeaderCy {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.formLabelCY {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.formInputCY {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #f44336;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d32f2f;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* End of sellpage css */
+
+
+
+
+/* HomePage.css */
+.homepage {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    position: relative;
+  }
+  
+  
+  .home1 {
+    margin-bottom: 30px;
+  }
+  
+  h1 {
+    font-size: 62px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .car-image-container {
+    max-width: 100%;
     position: absolute;
     bottom: 10px;
-    left: 37px;
-    font-size: 20px;
-}
+    left: 10px;
+  }
+  
+  .car-image {
+    max-width: 60%;
+    opacity: 0.8; /* Set the opacity to make the images partially transparent */
+  }
+  
+  /* Homepage Media Queries */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+  
+    .homepage {
+      padding: 10px;
+      height: 50vh;
+    }
+  
+    .car-image-container {
+      max-width: 40%;
+    }
+  
+    .home1 {
+      margin-bottom: 80px;
+    }
+  
+    .car-image {
+      max-width: 80%;
+    }
+  }
+/*End of homepage CSS*/
+
+
+
+
+  /* Login.css */
+.sign-in-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .sign-in-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .sign-in-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .sign-in-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #F44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .sign-in-container button:hover {
+    background-color: #E53935;
+  }
+  
+  .sign-in-container button:focus {
+    outline: none;
+  }
+  
+  .sign-in-container button:last-child {
+    margin-top: 10px;
+    background-color: transparent;
+    color: #F44336;
+    border: 1px solid #F44336;
+  }
+  
+
+
+  /**/
+
+
+
+  
