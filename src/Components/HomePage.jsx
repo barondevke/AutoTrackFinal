@@ -1,36 +1,3 @@
-// import React from 'react';
-// import { Link } from 'react-router-dom';
-
-// const HomePage = ({ isLoggedIn, userName }) => {
-//     return (
-//         <div className='homepage'>
-           
-//             {isLoggedIn ? <h2>Welcome back, {userName}!</h2> : null}
-
-//             <div className='home1'>
-//                 <h1>
-//                     Your One-Stop Destination for <br /> <span style={{ color: 'orange' }}>Buying</span> and{' '}
-//                     <span style={{ color: 'orange' }}>Selling</span> <br /> Quality Cars
-//                 </h1>
-
-//                 <div className='car-image-container'>
-//                     <img src="/images/Audi Q3 Sportback SUV.jpeg" alt="" className='car-image' />
-//                 </div>
-//             </div>
-
-//             <p>
-//                 <Link to="/login">Login to your account</Link>
-//             </p>
-
-
-//         </div>
-//     );
-// };
-
-// export default HomePage;
-
-
-
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -52,8 +19,8 @@ const HomePage = ({ isLoggedIn, userName }) => {
 
       <div className='home1'>
         <h1>
-          Your One-Stop Destination for <br /> <span style={{ color: 'orange' }}>Buying</span> and{' '}
-          <span style={{ color: 'orange' }}>Selling</span> <br /> Quality Cars
+          Your One-Stop Destination for <br /> <span style={{ color: '#d32f2f' }}>Buying</span> and{' '}
+          <span style={{ color: '#d32f2f' }}>Selling</span> <br /> Quality Cars
         </h1>
 
         <div className='car-image-container'>
