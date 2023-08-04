@@ -13,8 +13,15 @@ Group A
 - JavaScript
 - HTML
 - CSS
-- 
+- React
+  
 
+# ABOUT
+-Autotrack is a website for buying and selling cars of your choice
+- One can send money to the owner through paypal
+- One has to login to the website before hand
+
+  
 # Lisence
 MIT License
 
@@ -33,7 +40,6 @@ THE SOFTWARE IS PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 # Want to use some of the code ?
 Feel free to use the code as long as you follow the lisence and copywrite agreement.
 
-## Developer Notes
 
-## Like the code ?
-* Feel free to send money to our mpesa.
+
+
