@@ -1,10 +1,18 @@
 # Project Description
-
+AutoTrack is a website that allows users to buy and sell cars. It allows users to select from a vide variety of cars to buy from and they can even search for a specific car or narrow down their search according to their budget. Users can also add their own car to sell on the site by simply clicking on the sell page and adding their car details. The website also has authentification on it and allows users to create accounts which they can log in and out of.
 
 # How to launch project
+Follow the link on the about section of the GitHub repository.
+Or follow this link https://frabjous-dusk-010b87.netlify.app/ 
 
 # Author
 Group A
+- Stephen Ndaba
+- Natalie  Wanjiru
+- Patience Mugambi
+- Cheryl Yegon
+- Ibrahim Mohamed
+- Joseph Kinyuru 
 
 # Title
 # Auto Track
@@ -13,7 +21,7 @@ Group A
 - JavaScript
 - HTML
 - CSS
-- React
+- React + Vite
   
 
 # ABOUT
@@ -39,6 +47,9 @@ THE SOFTWARE IS PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 # Want to use some of the code ?
 Feel free to use the code as long as you follow the lisence and copywrite agreement.
+
+# Developer Notes
+The payment page is still under development and may not be fully functionable.
 
 
 
