@@ -3,7 +3,7 @@ AutoTrack is a website that allows users to buy and sell cars. It allows users t
 
 # How to launch project
 Follow the link on the about section of the GitHub repository.
-Or follow this link https://frabjous-dusk-010b87.netlify.app/ 
+Or follow this link https://autotrackorg.netlify.app/
 
 # Author
 Group A
