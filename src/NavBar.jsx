@@ -1,5 +1,6 @@
-import React from "react";
+
 import { NavLink, Link } from "react-router-dom";
+import './App.css'
 
 export default function NavBar() {
 
@@ -11,18 +12,23 @@ export default function NavBar() {
     };
 
     return (
+        <div className="navbarParent">
         <nav>
             <div className="logo">
                 <i className="fa-solid fa-car" ></i>
                 <span className="logo-text">Auto Track</span>
             </div>
+            <div className="listSection">
             <ul>
                 <li><NavLink exact to="/">Home</NavLink></li>
-                <li><NavLink exact to="/buy">Buy</NavLink></li>
-                <li><NavLink exact to="/sell">Sell</NavLink></li>
+                <li><NavLink exact to="/buy">Rent</NavLink></li>
+                <li><NavLink exact to="/sell">Car</NavLink></li>
                 <li><NavLink exact to="/about">About</NavLink></li>
-                <li><Link to="#" onClick={handleScrollToFooter}>Contact us</Link></li>
+                <li><NavLink exact to="/login">Login</NavLink></li>
+                <li><NavLink exact to="/register">Register</NavLink></li>
             </ul>
+         </div>
         </nav>
+        </div>
     )
 }

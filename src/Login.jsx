@@ -1,7 +1,7 @@
 import { signInWithEmailAndPassword } from "firebase/auth";
 import React, { useState, } from "react";
 import { Navigate } from "react-router-dom";
-import { auth } from "../assets/firebase"
+import { auth } from "./assets/firebase"
 import { useNavigate } from "react-router-dom";
 
 const Login = ({ changeForm }) => {

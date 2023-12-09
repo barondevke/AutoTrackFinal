@@ -4,6 +4,7 @@ import React from "react";
 import CarItem from "./CarItem";
 import SearchBar from "./SearchBar";
 import PriceFilter from "./PriceFilter";
+import NavBar from "./NavBar";
 
 export default function BuyPage({ cars }) {
     const [carsToDisplay, setCarsToDisplay] = useState(cars);
@@ -74,8 +75,13 @@ export default function BuyPage({ cars }) {
 
 
     return (
-        <>
-            <SearchBar onSearch={handleSearch} onClear={handleClear} />
+        <div className="buyPage">
+         <div className="buyPageA">
+        <NavBar/>
+            <h1>OUR FLEET OF CARS</h1>
+            <p>Discover freedom on wheels! Rent your dream car effortlessly from our website today. Enjoy seamless booking, a wide range of vehicles, and budget-friendly options. Choose from our well-maintained fleet for any adventure or occasion. Experience the convenience of flexible rental periods, top-notch customer service, and competitive rates. Unlock the joy of driving your preferred car model, whether for a road trip, special event, or everyday commute. Your journey begins with us – secure, convenient, and tailored to your needs. Book now for an unforgettable ride and a hassle-free experience</p>
+            </div>
+            <SearchBar className="searchBar" onSearch={handleSearch} onClear={handleClear} />
             <PriceFilter onFilter={handlePriceFilter} onReset={() => setPriceFilter("All")} />
             <div id="carsHolderJk">
                 {carNotFound ? (
@@ -86,6 +92,6 @@ export default function BuyPage({ cars }) {
                     })
                 )}
             </div>
-        </>
+        </div>
     );
 }

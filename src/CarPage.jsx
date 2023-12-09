@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRoad, faGear, faGasPump, faGauge } from "@fortawesome/free-solid-svg-icons";
 
 
+
+
 export default function CarPage({ cars }) {
     const { index } = useParams()
     const car = cars[index]
@@ -25,6 +27,7 @@ export default function CarPage({ cars }) {
 
     return (
         <div className="allDetailsSN">
+       
             <img className="carImageSN" src={car.url}></img>
             <Row className="carInfoSN">
                 <Col  >

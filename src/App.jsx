@@ -3,16 +3,16 @@ import { Routes, Route } from 'react-router-dom'
 import axios from 'axios'
 import carArray from './ImagesArray'
 import './App.css'
-import NavBar from './Components/NavBar'
-import Footer from './Components/Footer'
-import HomePage from './Components/HomePage'
-import SellPage from './Components/SellPage'
-import CarPage from './Components/CarPage'
-import BuyPage from './Components/BuyPage'
-import AboutPage from './Components/AboutPage'
-import Payment from './Components/Payment'
-import Login from './Components/Login'
-import Register from './Components/Register'
+import NavBar from './NavBar'
+import Footer from './Footer'
+import HomePage from './HomePage'
+import SellPage from './SellPage'
+import CarPage from './CarPage'
+import BuyPage from './BuyPage'
+import AboutPage from './AboutPage'
+import Payment from './Payment'
+import Login from './Login'
+import Register from './Register'
 
 
 function App() {
@@ -86,7 +86,6 @@ function App() {
 
   return (
     <>
-      <NavBar />
       <Routes>
         <Route path="/" exact="true" element={<HomePage />} />
         <Route path="/buy" exact="true" element={<BuyPage cars={finalArray} />} />
@@ -96,9 +95,9 @@ function App() {
         {currentForm === "login" ? <Route exact path="/login" element={<Login changeForm={changeForm} />} /> : <Route exact path="/login" element={<Register changeForm={changeForm} />} />}
         <Route path="/buy/:index" exact="true" element={<CarPage cars={finalArray} />} />
       </Routes>
-      <Footer />
+     {/*<Footer />*/}
     </>
   )
 }
 
-export default App
+export default App;

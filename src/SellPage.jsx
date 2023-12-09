@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import NavBar from './NavBar';
 
 function SellPage({ cars, setCars }) {
 
@@ -107,6 +108,7 @@ function SellPage({ cars, setCars }) {
     };
 
     return (
+        <>
         <div id='formDivCY'>
             <h1 id='formHeaderCy'>SELL YOUR CAR TODAY!!</h1>
             <form onSubmit={handleSubmit}>
@@ -146,6 +148,7 @@ function SellPage({ cars, setCars }) {
                 <button type='Submit'>ADD TO AUTOTRACK</button>
             </form>
         </div>
+    </>
     );
 }
 
