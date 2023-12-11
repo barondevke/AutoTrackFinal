@@ -1,8 +1,9 @@
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
 import { auth } from "./assets/firebase";
+import { NavLink } from "react-router-dom";
 
-const Register = ({ changeForm }) => {
+const Register = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
@@ -21,7 +22,15 @@ const Register = ({ changeForm }) => {
     };
 
     return (
+        <div className="signInParent">
         <div className="sign-in-container">
+            <div className="inSection">
+            <div className="leftSide">
+             <div className="logo">
+                <i className="fa-solid fa-car" ></i>
+                <span className="logo-text">Auto Track</span>
+              </div>
+             </div>
             <form onSubmit={signUp}>
                 <h1>Create Account</h1>
                 <input
@@ -38,7 +47,9 @@ const Register = ({ changeForm }) => {
                 ></input>
                 <button type="submit">Sign Up</button>
             </form>
-            <button onClick={() => changeForm("login")}>Already have an account.</button>
+            <p><NavLink exact to="/login">Have an account?Login</NavLink></p>
+            </div>
+        </div>
         </div>
     );
 };

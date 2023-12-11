@@ -11,25 +11,29 @@ body {
 /*Carpage*/
 .carImageSN {
     height: 50vh;
-    width: 100vw;
+    width: 90%;
+    margin-top: 22%;
 }
 
 .statsSN {
-    margin-top: 2%;
+    margin-top: 5%;
     color: #6F61C0;
+    display: flex;
 }
 
 .carInfoSN {
-    margin-top: 2%;
+    margin-top: 32%;
     font-family: 'Open Sans', sans-serif;
 }
 
 .rightStatsSN {
-    padding-right: 70%;
+    margin-left: 40%;
 }
 
-.carPriceSN {
-    padding-left: 40%;
+.pageButton {
+  width: 60%;
+  margin-left: 6%;
+  margin-top: 4%;
 }
 
 .carPriceValueSN {
@@ -39,25 +43,75 @@ body {
 
 .allDetailsSN {
     padding: auto;
+    border: 1px solid gray;
+    background-color: #323232;
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(360px, 1fr));
+    gap:5%;
+    height: 55rem;
 }
 
 .buyBtnSN {
-    font-size: 2rem;
+    font-size: 1rem;
     background-color: #5DADE2;
     color: yellow;
     margin-top: 1.2%;
     margin-bottom: 1.7%;
 }
+.carNameSN{
+  font-size: 230%;
+  color: white;
+}
 
+@media (max-width:760px) {
+  .carImageSN {
+    height: 50vh;
+    width: 100%;
+    margin-top: 9%;
+}
+.carInfoSN {
+  margin-top: 0%;
+}
+.allDetailsSN {
+  overflow-x: hidden;
+}
+}
+@media (min-width: 760px) and (max-width: 1155px){
+  .carImageSN {
+    margin-top: 42%;
+}
+.rightStatsSN {
+  margin-left: 5%;
+}
+.allDetailsSN{
+  gap:3%;
+}
+.carInfoSN{
+  margin-top: 42%;
+  font-size: 90%;
+}
+}
 /*End of Carpage*/
-
+/*Payment*/
+.paymentButton{
+  border:10px solid gray;
+  width: 50%;
+  padding: 5%;
+  margin-left: 26%;
+  margin-top: 12%;
+  border-radius: 30px;
+}
 
 /* AboutPage.css */
+.aboutNav{
+  background-color: rgba(0, 0, 0, 0.9);
+  padding-bottom: 2%;
+}
 .about-us-containerIM {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px auto;
+    margin: 60px auto;
     max-width: 800px;
     padding: 20px;
     background-color: #f0f0f0;
@@ -98,8 +152,16 @@ body {
     margin-bottom: 15px;
     color: #333;
   }
-  
-
+  .aboutParent{
+    background-color: #323232;
+    background-image: url("https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/body-image/public/99-best-luxury-cars-2023-bmw-i7-lead.jpg?itok=3aHfyLGd");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: 100% ;
+  }
+.aboutChild{
+  background-color: rgba(0, 0, 0, 0.9);
+}
 /* About ends here */
 
 
@@ -218,9 +280,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4%;
-    border: 3px solid black;
+    padding: 6%;
+    border: 3px solid rgb(54, 53, 53);
     transition: background-color 0.3s ease;
+    border-radius: 4%;
   }
   
   .carContainerJk img {
@@ -337,7 +400,7 @@ body {
   width: 80%;
   max-width: 600px;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 5px solid #ccc;
   border-radius: 8px;
   background-color: #f9f9f9;
 }
@@ -357,7 +420,7 @@ body {
   width: 100%;
   padding: 8px;
   font-size: 16px;
-  border: 1px solid #ccc;
+  border: 3px solid #ccc;
   border-radius: 4px;
   margin-bottom: 15px;
 }
@@ -380,7 +443,9 @@ button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
 }
-
+.sellNav{
+  background-color: #323232;
+}
 /* End of sellpage css */
 
 
@@ -443,61 +508,73 @@ margin-right:3%;
 }
 
   /* Login.css */
+.signInParent{
+   background-image: url("https://media.architecturaldigest.com/photos/63079fc7b4858efb76814bd2/16:9/w_4000,h_2250,c_limit/9.%20DeLorean-Alpha-5%20%5BDeLorean%5D.jpg");
+   background-repeat: no-repeat;
+   background-size: 100%;
+  }
+  
 .sign-in-container {
+  background-color: rgba(0, 0, 0, 0.4);
+  }
+  .sign-in-container .inSection{
+    background-color: rgba(0, 0, 0, 0.4);
+    width:50%;
+    height: 55.6rem;
+    
+  }
+
+  .sign-in-container .inSection form{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    width: 60%;
+    margin-left: 18%;
+   
   }
-  
   .sign-in-container h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    color: white;
+    margin-left: 34%;
+    margin-top: 20%;
   }
   
-  .sign-in-container input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
+.sign-in-container input {
+    border: none; 
+    border-bottom: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 3rem;
+    border-radius: 10px;
+    margin-top: 5%;
+}
   
-  .sign-in-container button {
-    width: 100%;
-    padding: 10px;
-    background-color: #F44336;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+.sign-in-container button {
+    margin-top: 5%; 
+    border-radius: 20px; 
+    margin-bottom: 6%;
+}
   
-  .sign-in-container button:hover {
-    background-color: #E53935;
-  }
-  
-  .sign-in-container button:focus {
-    outline: none;
-  }
-  
-  .sign-in-container button:last-child {
-    margin-top: 10px;
-    background-color: transparent;
-    color: #F44336;
-    border: 1px solid #F44336;
-  }
-  
+.sign-in-container button:hover {
+    background-color: white;
+    color: red;
+}
+
+.sign-in-container a{
+  color: white;
+  margin-left: 37%;
+  font-weight: 200;
+}
+.sign-in-container a:hover{
+  color: red;
+}
+.sign-in-container .leftSide {
+ margin-left: 55%;
+ padding-top: 20%;
+}
 
 
   /*Cars Page/Buy Page*/
 .buyPage{
     background-color: #0b0b0b;
-    overflow-x: hidden;
+    overflow: hidden;
   }
 
 .buyPageA{
@@ -522,7 +599,3 @@ margin-right:3%;
 .price-filter-containerJk{
   margin-left: 14.5%;
 }
-#carsHolderJk{
-
-}
-  

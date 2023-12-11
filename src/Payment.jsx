@@ -34,7 +34,7 @@ const Payment = () => {
     };
 
     return (
-        <div className='button'>
+        <div className='paymentButton'>
             <PayPalScriptProvider
                 options={{
                     "client-id": "AdcnuG4Y1-YrxVE0d_-wadGsl03kmKZUmhJFlaZH10QRDhWo3E5LgF7RC0FvBpw177HHl6ovoJLj9y2u"

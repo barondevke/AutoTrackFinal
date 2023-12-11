@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRoad, faGear, faGasPump, faGauge } from "@fortawesome/free-solid-svg-icons";
 
@@ -25,10 +25,20 @@ export default function CarPage({ cars }) {
 
     }
 
+    function navigateToPaypal() {
+        useEffect(() => {
+            navigate('/payment')
+
+
+        }, [])
+    }
+
+
     return (
         <div className="allDetailsSN">
        
             <img className="carImageSN" src={car.url}></img>
+            <div className="carInfoParent">
             <Row className="carInfoSN">
                 <Col  >
                     <h1 className="carNameSN">{car.year} {car.model} -{car.make} </h1>
@@ -41,35 +51,23 @@ export default function CarPage({ cars }) {
             </Row>
             <Row>
                 <Col className="statsSN">
-                    <Row>
-                        <Col>
+                        <div>
                             <h4><FontAwesomeIcon icon={faRoad} style={{ color: "#6f61c0", }} /> Kms Driven</h4>
                             <h4><FontAwesomeIcon icon={faGear} style={{ color: "#6f61c0", }} /> Transmission</h4>
                             <h4><FontAwesomeIcon icon={faGasPump} style={{ color: "#6f61c0", }} /> Fuel</h4>
                             <h4><FontAwesomeIcon icon={faGauge} style={{ color: "#6f61c0", }} /> Consumption</h4>
-
-                        </Col>
-                        <Col className="rightStatsSN">
+                        </div>
+                        <div className="rightStatsSN">
                             <h4>{car.kmsDriven}</h4>
                             <h4>{car.transmissionType}</h4>
                             <h4>{car.fuelType}</h4>
                             <h4>{car.fuelConsumption}</h4>
-
-                        </Col>
-
-                    </Row>
-
-
+                        </div>
                 </Col>
             </Row>
-            <Row>
-                <Col>
-                    <button onClick={() => navigate(`/payment`)} className="buyBtnSN">Buy Now</button>
-                </Col>
-            </Row>
+                 <button className="pageButton"><NavLink exact to="/payment">Rent Car</NavLink></button>
 
-
-
+</div>
         </div>
     )
 }

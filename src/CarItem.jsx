@@ -2,7 +2,6 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function CarItem({ car, index }) {
-
     const navigate = useNavigate();
 
     function getStars(rating) {
@@ -26,9 +25,9 @@ export default function CarItem({ car, index }) {
             <div className="botCardInternalJk">
                 <h2 style={{ color: `#2ECC71` }}>Ksh {car.price}</h2>
                 <h2>{car.year} {car.make} {car.model}</h2>
-                <h3><i class="fa-solid fa-location-dot"></i>  {car.location}</h3>
+                <h3><i className="fa-solid fa-location-dot"></i>  {car.location}</h3>
                 <h3>{getStars(car.rating)}</h3>
             </div>
         </div>
-    )
+    );
 }

@@ -6,7 +6,9 @@ import NavBar from './NavBar';
 
 const AboutPage = () => {
     return (
-        <>
+        <div className='aboutParent'>
+             <div className='aboutChild'>
+        <div className='aboutNav'><NavBar/></div>
         <div className="about-us-containerIM">
             <div className="car-image-containerIM">
                 <img src='https://media.wired.com/photos/5927284ff3e2356fd800b9b4/master/w_1600%2Cc_limit/03_CHIRON_34-front_WEB.jpg' alt="Car" className="car-image" />
@@ -45,10 +47,10 @@ const AboutPage = () => {
                     seeking their dream car or looking to sell their vehicle quickly and hassle-free."
 
                 </p>
-
+         </div>
             </div>
         </div>
-    </>
+    </div>
     );
 };
 

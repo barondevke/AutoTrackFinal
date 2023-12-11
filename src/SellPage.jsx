@@ -109,6 +109,7 @@ function SellPage({ cars, setCars }) {
 
     return (
         <>
+        <div className='sellNav'><NavBar/></div>
         <div id='formDivCY'>
             <h1 id='formHeaderCy'>SELL YOUR CAR TODAY!!</h1>
             <form onSubmit={handleSubmit}>

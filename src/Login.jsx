@@ -1,10 +1,11 @@
 import { signInWithEmailAndPassword } from "firebase/auth";
 import React, { useState, } from "react";
-import { Navigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { auth } from "./assets/firebase"
 import { useNavigate } from "react-router-dom";
+import NavBar from "./NavBar";
 
-const Login = ({ changeForm }) => {
+const Login = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
@@ -24,9 +25,17 @@ const Login = ({ changeForm }) => {
     };
 
     return (
+        <div className="signInParent">
         <div className="sign-in-container">
+            <div className="inSection">
+            <div className="leftSide">
+            <div className="logo">
+               <i className="fa-solid fa-car" ></i>
+               <span className="logo-text">Auto Track</span>
+             </div>
+            </div>
             <form onSubmit={signIn}>
-                <h1>Log In to your Account</h1>
+                <h1>Log In</h1>
                 <input
                     type="email"
                     placeholder="Enter your email"
@@ -41,7 +50,9 @@ const Login = ({ changeForm }) => {
                 ></input>
                 <button type="submit">Log In</button>
             </form>
-            <button onClick={() => { changeForm("register") }} >Don't have an account</button>
+           <p><NavLink exact to="/register">Don't have an account? Register</NavLink></p>
+        </div>
+        </div>
         </div>
     );
 };

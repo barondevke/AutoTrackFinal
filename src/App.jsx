@@ -92,7 +92,8 @@ function App() {
         <Route path="/sell" exact="true" element={<SellPage cars={finalArray} setCars={setFinalArray} />} />
         <Route path="/about" exact="true" element={<AboutPage />} />
         <Route path="/payment" exact="true" element={<Payment />} />
-        {currentForm === "login" ? <Route exact path="/login" element={<Login changeForm={changeForm} />} /> : <Route exact path="/login" element={<Register changeForm={changeForm} />} />}
+        <Route exact path="/login" element={<Login/>}/> 
+        <Route exact path="/register" element={<Register/>} />
         <Route path="/buy/:index" exact="true" element={<CarPage cars={finalArray} />} />
       </Routes>
      {/*<Footer />*/}
